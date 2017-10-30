@@ -25,4 +25,5 @@ dependencies:
 - classylss>=0.2
 - mcfit
 - matplotlib
-- nbodykit
+- pip
+  - git+git://github.com/bccp/nbodykit.git@master
