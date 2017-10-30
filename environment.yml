@@ -26,4 +26,5 @@ dependencies:
 - mcfit
 - matplotlib
 - pip
+- pip:
   - git+git://github.com/bccp/nbodykit.git@master
