@@ -70,6 +70,9 @@ if __name__ == '__main__':
     for filename in notebooks:
         print("executing %s..." % os.path.split(filename)[-1])
         start = time.time()
-        #run_notebook(filename)
+        try:
+            run_notebook(filename)
+        except Exception as e:
+            print(e)
         stop = time.time()
         print("  ...done in %d seconds" %(stop-start))
