@@ -1,0 +1,9 @@
+See nbodykit getting started section on docker.
+Here is a list of commands
+
+docker build --tag bccp:1.0 --network=host .
+docker run -it -p 8888:8888 bccp:1.0 /bin/bash
+
+# in docker env:
+/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --allow-root --ip 0.0.0.0 --port 8888
+
